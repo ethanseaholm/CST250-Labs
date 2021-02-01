@@ -1,7 +1,71 @@
-package com.mycompany.lab02;
-
+// USING INT NUMBERS
 public class MainClass {
+    
+    public static void main(String[] args){
+        
+        int[] inputArray = {-1,0,1};
+        int n = 1;
+        int result = mySearch(inputArray,n);
+        System.out.println(result);
 
-  public static void main[String[] args) {
-  
- }
+    }
+
+public static int mySearch(int[] inputArray, int n){
+        
+        for (int i=0;i<inputArray.length;i++){
+            if(inputArray[i] == n) {
+                return i;
+            }
+        }
+        return -1;
+}
+    
+} //RESULT: 2
+
+// USING DOUBLE NUMBERS
+public class MainClass {
+    
+    public static void main(String[] args){
+        
+        double[] inputArray = {-1.1,1.2,1.9};
+        double n = 1.2;
+        double result = mySearch(inputArray,n);
+        System.out.println(result);
+
+    }
+
+public static int mySearch(double[] inputArray, double n){
+        
+        for (int i=0;i<inputArray.length;i++){
+            if(inputArray[i] == n) {
+                return i;
+            }
+        }
+        return -1;
+}
+    
+} //RESULT: 1
+
+// USING EMPTY ARRAY
+public class MainClass {
+    
+    public static void main(String[] args){
+        
+        int[] inputArray = {};
+        int n = 0;
+        int result = mySearch(inputArray,n);
+        System.out.println(result);
+
+    }
+
+public static int mySearch(int[] inputArray, int n){
+        
+        for (int i=0;i<inputArray.length;i++){
+            if(inputArray[i] == n) {
+                return i;
+            }
+        }
+        return -1;
+}
+    
+} //RESULT: -1
