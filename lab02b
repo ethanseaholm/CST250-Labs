@@ -29,5 +29,5 @@ public static int mySort(int[] inputArray) {
         inputArray[i] = inputArray[index];
         inputArray[index] = temp;
         }
-}
+    }
 }
