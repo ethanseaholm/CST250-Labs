@@ -8,12 +8,12 @@ public class MainClass {
         
         public static void main(String[] args){
             
-        int[] inputArray = {3,4,6,7,8};
-        int result = mySort(inputArray);
-        System.out.println(result);
+        int[] inputArray = {3,4,6,7,8,1};
+        mySort(inputArray);
+        System.out.println(inputArray);
     }
         
-public static int mySort(int[] inputArray) {
+public static void mySort(int[] inputArray) {
         
         int arraySize = inputArray.length;
         for (int i = 0; i < arraySize - 1; i++) {
