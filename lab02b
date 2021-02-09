@@ -1,14 +1,19 @@
+package com.mycompany.lab02b;
+
+/**
+ *
+ * @author Ethan
+ */
 public class MainClass {
         
         public static void main(String[] args){
             
-        int[] inputArray = {1,2,3};
-        int n = 0;
-        int result = mySort(inputArray,n);
+        int[] inputArray = {3,4,6,7,8};
+        int result = mySort(inputArray);
         System.out.println(result);
     }
         
-public static int mySort(int[] inputArray, int n) {
+public static int mySort(int[] inputArray) {
         
         int arraySize = inputArray.length;
         for (int i = 0; i < arraySize - 1; i++) {
@@ -25,5 +30,4 @@ public static int mySort(int[] inputArray, int n) {
         inputArray[index] = temp;
         }
 }
-    
 }
