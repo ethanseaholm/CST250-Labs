@@ -1,0 +1,35 @@
+package com.mycompany.mainclass;
+
+class BinarySearchExample{
+ public static void binarySearch(int arr[], int first, int last, int key){ // create a void method and define int variables arr[], first, last,
+        // and key in accordance with int variables defined in the main method
+   int mid = (first + last)/2; // define an int variable called "mid": takes the numbers at index[0] and index[4], adds them
+        // and divides them by two to get to the middle position/number of the array
+   
+        
+        while( first <= last ){ // while the first integer at index[0] is less than or equal to the last variable at index[4]...
+      if ( arr[mid] < key ){ // if the middle integer of the array is less than 30...
+        first = mid + 1; // ...the algorithm will move from the first number in the array to the next rightmost value and test it
+      }else if ( arr[mid] == key ){ // if the middle number of the array is equal to the key (30) defined in the main method...
+        System.out.println("Element is found at index: " + mid); // ...the program will have succeeded in finding the position of the key (30)
+        // and print it
+        break; // ends the program after printing
+      }else{ // if none of the above...
+         last = mid - 1; // ...the algorithm will move from the last number in the array to the next leftmost value and test it
+      }
+      mid = (first + last)/2; // reiterates the mid variable defined above inside the scope of the while statement
+   }
+   
+   
+   if ( first > last ){ // if the first number in the search is greater than the last number in the search...
+      System.out.println("Element is not found!"); // ...the element (30) is not found
+   }
+ }
+ public static void main(String args[]){ // establish a main method
+		int arr[] = {10,20,30,40,50}; // create an array filled with the numbers 10, 20, 30, 40, 50
+		int key = 30; // define an int variable called "key" equal to 30: this is the number the program is trying to find
+        int last=arr.length-1; // define an int variable called "last" equal to the length of the array minus 1: if the last number is not equal
+            // to the key (30), the length of the array will shrink, maximizing the chances of finding the key
+		binarySearch(arr,0,last,key); // calls the binarySearch method
+ }
+}
