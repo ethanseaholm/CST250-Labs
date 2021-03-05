@@ -41,3 +41,37 @@ public class MainClass {
     }
     
 }
+
+BONUS:
+
+// I did what I could. I didn't get it to work, but I tried my best.
+
+public void draw(){
+        
+        if (width > 5 && height > 5){
+            filled = true;
+            
+            if (filled == true){
+            
+            for (int i = 0; i < height; i++){
+                    for (int j = 0; j < width; j++){
+                         if (j != 0 || j != width){
+                             System.out.print("*");
+                         }
+                    }
+                    System.out.println(" ");
+            }
+            
+        }
+        }
+        else {
+        
+        for (int i = 0; i < height; i++){
+            for (int j = 0; j < width; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+      }
+   }
+}
