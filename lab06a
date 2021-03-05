@@ -1,0 +1,22 @@
+package com.mycompany.rectangle.lab06;
+
+public class Rectangle {
+    
+    int width;
+    int height;
+    
+    public Rectangle(int width, int height){ // use netbeans to create a constructor
+        this.width = width;
+        this.height = height;
+    }
+    
+    public void draw(){
+        for (int i = 0; i < height; i++){ // i = columns
+            for (int j = 0; j < width; j++){ // j = rows
+                System.out.print("*"); // use print function rather than println because we want the asterisks to be on the same line
+            }
+            System.out.println(""); // println is used here instead to advance to the next line after each row is filled out
+        }
+    }
+    
+}
