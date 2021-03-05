@@ -1,3 +1,5 @@
+PART A:
+
 package com.mycompany.rectangle.lab06;
 
 public class Rectangle {
@@ -17,6 +19,25 @@ public class Rectangle {
             }
             System.out.println(""); // println is used here instead to advance to the next line after each row is filled out
         }
+    }
+    
+}
+
+PART B:
+
+
+package com.mycompany.rectangle.lab06;
+
+public class MainClass {
+    
+    public static void main(String[] args){
+        
+        Rectangle r1 = new Rectangle(5, 8); // create a new rectangle with a width of 5 and a height of 8
+        r1.draw(); // call from part A
+        
+        Rectangle r2 = new Rectangle(8, 5); // create a new rectangle with a width of 8 and a height of 5
+        r2.draw(); // call from part A once again
+        
     }
     
 }
